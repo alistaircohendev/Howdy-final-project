@@ -1,0 +1,155 @@
+/* 
+Project Name: Howdy - Final Project Pages
+Author: Alistair Cohen
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+
+}
+
+.site-header {
+
+}
+
+.site-content {
+
+}
+.site-footer {
+
+}
+
+
+.grid-row { margin:0px; }
+.grid-column {
+    float:left;
+    margin:0;
+    padding:0 20px; /* match to .grid-container */
+}
+.grid-fifth			{ width: 20% }
+
+
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+header {
+	margin: 0px;
+	width: 100%;
+}
+
+
+h1 {
+	color: white;
+	font-family: 'Pacifico', cursive;
+	font-size: 3em;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	background: #346ea3; /* royal blue type colour */
+}
+
+
+
+.grid-row a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	margin: 5px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-row a {
+		font-size: 0.8em;
+	}
+}
+
+
+.grid-fifth {
+	border-right: 1px white solid;
+	border-radius: 0px 0px 7px 7px;
+	text-align: center;
+	padding: 10px;
+	background: #346ea3; /* royal blue type colour */
+	transition: 0.3s;
+}
+
+
+.grid-fifth:last-of-type {
+	border-right: none;
+}
+
+
+.grid-fifth:hover {
+	background: #2e6392;
+}
+
+
+.page-content {
+	display: block;
+	float: left;
+	border: 1px solid black;
+	margin: 20px 0px 0px 20px;
+	padding: 10px 10px 900px 10px;
+	width: 83%;
+}
+
+
+.site-footer {
+	clear: both;
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+	border: 1px solid black;
+}
+
+
