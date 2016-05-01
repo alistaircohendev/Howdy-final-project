@@ -7,7 +7,10 @@ Author: Alistair Cohen
 /* COLOURS
 /*******************************************/
 
-/* add a list of colours used in the project */
+/* 
+#346ea3 royal blue header colour 
+white nav text colour
+*/
 
 /******************************************
 /* SENSIBLE DEFAULTS                   
@@ -21,7 +24,10 @@ Author: Alistair Cohen
 /* TYPOGRAPHY
 /*******************************************/
 
-/* add type styles here */
+/* 
+font-family: 'Pacifico', cursive; Howdy logo font
+font-family: 'Roboto', sans-serif;  Nav items
+*/
 
 
 /******************************************
@@ -93,7 +99,7 @@ h1 {
 	font-family: 'Pacifico', cursive;
 	font-size: 3em;
 	text-align: center;
-	padding: 0px 0px 20px 0px;
+	padding: 0px 0px 15px 0px;
 	margin: 0;
 	background: #346ea3; /* royal blue type colour */
 }
@@ -115,10 +121,13 @@ nav a {
 	transition: 0.3s;
 }
 
-@media only screen and (max-width: 500px) {
-	nav a {
-		font-size: 0.8em;
-	}
+
+nav img {
+	width: 30px;
+	position: absolute;
+	left: 5%;
+    top: 5%;
+    visibility: hidden;
 }
 
 
@@ -130,6 +139,24 @@ nav a:last-of-type {
 nav a:hover {
 	background: #2e6392;
 }
+
+
+@media only screen and (max-width: 505px) {
+	nav a {
+		font-size: 0.8em;
+	}
+}
+
+
+@media only screen and (max-width: 430px) {
+	nav a {
+		visibility: hidden;
+	}
+	nav img {
+		visibility: visible;
+	}
+}
+
 
 
 .page-content {
