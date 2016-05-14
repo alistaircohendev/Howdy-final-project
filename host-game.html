@@ -19,7 +19,7 @@
 				<h1>Howdy</h1>
 				<nav>
 					<a href="find-game.html">Find Game</a>
-					<a href="host-game.html">Host Game</a>
+					<a href="host-game.html" id="active">Host Game</a>
 					<a href="#">My Games</a>
 					<a href="#">Settings</a>
 					<a href="#">Feedback</a>
@@ -28,7 +28,30 @@
 			</header>
 			
 			<main class="clearfix">
-				<p>Main content goes here</p>
+				<form  action="register.php" method="post">
+					<div class="form-field">
+						<p>Complete the form below to post your game.  First choose whether it's a board game, card game, or sport, and then add the details so others can find your post!</p>
+					</div>
+					<div class="form-field">
+						<label for="game-type">Type of game</label>
+						<select id="game-type">
+							<option value="BG">Board game</option>
+							<option value="CG">Card game</option>
+							<option value="SP">Sport</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="post-title">Give your post a title</label>
+						<input type="text" id="post-title">
+					</div>
+					<div class="form-field">
+						<label for="game-description">Descpription of your game</label>
+						<textarea id="game-description"></textarea>
+					</div>
+					<div class="form-field">
+						<input type="submit" value="Post your game!">
+					</div>
+				</form>
 			</main>
 			
 			<footer class="site-footer clearfix">
