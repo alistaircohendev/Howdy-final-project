@@ -6,177 +6,154 @@
     	<meta name="keywords" content="Howdy sports board games card games poker bridge table-top gaming">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Howdy | Make games happen</title>
-
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
 	
-	<body>
-		<div class="site-container">
-			<header class="site-header clearfix">
-				<h1>Howdy</h1>
-				<nav>
-					<a href="find-game.html" id="active">Find Game</a>
-					<a href="host-game.html">Host Game</a>
-					<a href="#">My Games</a>
-					<a href="#">Settings</a>
-					<a href="#">Feedback</a>
-					<img src="images/burger-menu.png">
+	<body class="container">
+		<div> <!-- Site Container -->
+
+<!-- Header and nav -->
+
+			<header> 
+				<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">Howdy</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="find-game.html">Find Game<span class="sr-only">(current)</span></a></li>
+				        <li><a href="host-game.html">Host Game</a></li>
+				        <li><a href="#">My Games</a></li>
+				        <li><a href="#">Settings</a></li>
+				        <li><a href="#">Feedback</a></li>
+				      </ul>
+				    </div> <!-- /.navbar-collapse -->
+				  </div> <!-- /.container-fluid -->
 				</nav>
 			</header>
-			
-			<main class="clearfix"> <!-- Main site content -->
-				<div class="game-list">
-					<div class="filter-row clearfix">
-						<button><h3>Filter</h3></button>
-						<button><h3>Sort</h3></button>
-					</div>
-					<div class="game-list-row-header clearfix">
-						<div class="game-list-column-header photo">
-							<p>Photo of host</p>
-						</div>
-						<div class="game-list-column-header post-title">
-							<p>Title of post</p>
-						</div>
-						<div class="game-list-column-header game-type">
-							<p>Game type</p>
-						</div>
-						<div class="game-list-column-header date-time">
-							<p>Date and time</p>
-						</div>
-						<div class="game-list-column-header distance">
-							<p>Distance</p>
-						</div>
-					</div>
-					<a href="#">
-						<div class="game-list-row clearfix">
-							<div class="game-list-column photo photo1">
-								<img src="images/host1.png">
-							</div>
-							<div class="game-list-column post-title">
-								<p>Title of post 1</p>
-							</div>
-							<div class="game-list-column game-type">
-								<p>Board Game</p>
-							</div>
-							<div class="game-list-column date-time">
-								<p>
-									<span>10/05/16</span>
-									<span>20:00</span>
-								</p>
-							</div>
-							<div class="game-list-column distance">
-								<p>0.1 miles</p>
-							</div>
-						</div>
-					</a>
-					<a href="#">
-						<div class="game-list-row clearfix">
-							<div class="game-list-column photo">
-								<img src="images/host2.png">
-							</div>
-							<div class="game-list-column post-title">
-								<p>Title of post 1</p>
-							</div>
-							<div class="game-list-column game-type">
-								<p>Card Game</p>
-							</div>
-							<div class="game-list-column date-time">
-								<p>
-									<span>10/05/16</span>
-									<span>20:00</span>
-								</p>
-							</div>
-							<div class="game-list-column distance">
-								<p>0.2 miles</p>
-							</div>
-						</div>
-					</a>
-					<a href="#">
-						<div class="game-list-row clearfix">
-							<div class="game-list-column photo">
-								<img src="images/host3.png">
-							</div>
-							<div class="game-list-column post-title">
-								<p>Title of post 1</p>
-							</div>
-							<div class="game-list-column game-type">
-								<p>Sport</p>
-							</div>
-							<div class="game-list-column date-time">
-								<p>
-									<span>10/05/16</span>
-									<span>20:00</span>
-								</p>
-							</div>
-							<div class="game-list-column distance">
-								<p>0.3 miles</p>
-							</div>
-						</div>
-					</a>
-					<a href="#">
-						<div class="game-list-row clearfix">
-							<div class="game-list-column photo">
-								<img src="images/host4.png">
-							</div>
-							<div class="game-list-column post-title">
-								<p>Title of post 1</p>
-							</div>
-							<div class="game-list-column game-type">
-								<p>Board Game</p>
-							</div>
-							<div class="game-list-column date-time">
-								<p>
-									<span>10/05/16</span>
-									<span>20:00</span>
-								</p>
-							</div>
-							<div class="game-list-column distance">
-								<p>1.0 mile</p>
-							</div>
-						</div>
-					</a>
-					<a href="#">
-						<div class="game-list-row clearfix">
-							<div class="game-list-column photo">
-								<img src="images/host5.png">
-							</div>
-							<div class="game-list-column post-title">
-								<p>Title of post 1</p>
-							</div>
-							<div class="game-list-column game-type">
-								<p>Card Game</p>
-							</div>
-							<div class="game-list-column date-time">
-								<p>
-									<span>10/05/16</span>
-									<span>20:00</span>
-								</p>
-							</div>
-							<div class="game-list-column distance">
-								<p>2.0 miles</p>
-							</div>
-						</div>
-					</a>
+
+<!-- Main page content -->
+
+			<main> 
+				<h1 class="text-center">Find Games</h1>
+				<div class="row container-fluid pull-right">
+					<a class="btn btn-default" href="#" role="button">Sort</a>
+					<a class="btn btn-default" href="#" role="button">Filter</a>
 				</div>
+				<table class="table table-hover table-resposive text-center">
+				  <thead>
+				    <tr>
+				      <th class="text-center">Photo</th>
+				      <th class="text-center">Title</th>
+				      <th class="text-center">Game Type</th>
+				      <th class="text-center">Date/Time</th>
+				      <th class="text-center">Distance</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+						<td><img src="images/host1.png" class="img-fluid center-block" alt="Responsive image"></td>
+						<td>Settlers of Catan</td>
+						<td>
+				    		Board Game<br>
+				    		<img src="images/board-game.png" class="img-fluid center-block" alt="Responsive image">
+				    	</td>
+						<td>10/05/16 22:00</td>
+						<td>0.1 miles</td>
+				    </tr>
+				    <tr>
+				      	<td><img src="images/host2.png" class="img-fluid center-block" alt="Responsive image"></td>
+				      	<td>NL Texas Holdem Poker - 5 players needed</td>
+				      	<td>
+				      		Card Game<br>
+				      		<img src="images/card-game.png" class="img-fluid center-block" alt="Responsive image">
+				      	</td>
+				    	<td>10/05/16 22:00</td>
+				      	<td>0.2 miles</td>
+				    </tr>
+				    <tr>
+				    	<td><img src="images/host3.png" class="img-fluid center-block" alt="Responsive image"></td>
+				    	<td>5-a-side football game - looking for an extra player</td>
+				    	<td>
+				      		Sport<br>
+				      		<img src="images/sport.png" class="img-fluid center-block" alt="Responsive image">
+				      	</td>
+				    	<td>10/05/16 22:00</td>
+				    	<td>0.3 miles</td>
+				    </tr>
+				    <tr>
+				    	<td><img src="images/host4.png" class="img-fluid center-block" alt="Responsive image"></td>
+				    	<td>Chess opponent in W9</td>
+				    	<td>
+				    		Board Game<br>
+				    		<img src="images/board-game.png" class="img-fluid center-block" alt="Responsive image">
+				    	</td>
+				    	<td>10/05/16 22:00</td>
+				    	<td>1 mile</td>
+				    </tr>
+				    <tr>
+				      	<td><img src="images/host5.png" class="img-fluid center-block" alt="Responsive image"></td>
+				      	<td>Bridge Tournament - 10 players, prizes available</td>
+				      	<td>
+				      		Card Game<br>
+				      		<img src="images/card-game.png" class="img-fluid center-block" alt="Responsive image">
+				      	</td>
+				      	<td>10/05/16 22:00</td>
+				      	<td>2 miles</td>
+				    </tr>
+				  </tbody>
+				</table>
+
+				<nav class="container">
+				  <ul class="pagination pull-right">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
 			</main> <!-- Main site content -->
+
+<!-- Footer -->
 			
-			<footer class="site-footer clearfix">
-				<p>&copy;
-					<script language="JavaScript" type="text/javascript">
-					    now = new Date
-					    theYear=now.getYear()
-					    if (theYear < 1900)
-					    theYear=theYear+1900
-					    document.write(theYear)
-					</script> 
-					Alistair Cohen
-				</p>
+			<footer class="footer container navbar-bottom">
+				<div>
+					<p class="text-muted">&copy;
+						<script language="JavaScript" type="text/javascript">
+						    now = new Date
+						    theYear=now.getYear()
+						    if (theYear < 1900)
+						    theYear=theYear+1900
+						    document.write(theYear)
+						</script> 
+						Alistair Cohen
+					</p>
+				</div>
 			</footer>
-		</div><!-- .site-container -->
+		</div> <!-- Site Container -->
+
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</body>
 </html>
