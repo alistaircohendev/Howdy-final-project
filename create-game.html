@@ -25,17 +25,15 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-				      <a class="navbar-brand" href="#">Howdy</a>
+				      <a class="navbar-brand" href="#"><strong>HOWDY</strong></a>
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				        <li><a href="find-game.html">Find Game</a></li>
-				        <li class="active"><a href="host-game.html">Host Game<span class="sr-only">(current)</span></a></li>
-				        <li><a href="#">My Games</a></li>
-				        <li><a href="#">Settings</a></li>
-				        <li><a href="#">Feedback</a></li>
+				        <li><a href="join-game.html">Join Game</a></li>
+				        <li class="active"><a href="create-game.html">Create Game<span class="sr-only">(current)</span></a></li>
+				        <li><a href="feedback.html">Feedback</a></li>
 				      </ul>
 				    </div> <!-- /.navbar-collapse -->
 				  </div> <!-- /.container-fluid -->
@@ -46,15 +44,27 @@
 
 			<main> 
 				<div>
-					<h1 class="text-center">Host a Game</h1>
-					<p>Complete the form below to post your game.  First choose whether it's a board game, card game, or sport, and then add the details so others can find your post!</p>
+					<h1 class="text-center">Create a Game</h1>
+					<p class="text-center">Complete the form below to post your game.  First choose whether it's a board game, card game, or sport, and then add the details so others can find your post!</p>
 				</div>
 				<form class="form-horizontal" action="register.php" method="post">
+					<div class="form-group">
+						<label for="host-name" class="col-sm-3 control-label">Your name*</label>
+						<div class="col-sm-6">
+							<input type="text" id="host-name" class="form-control" placeholder="Name" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="host-email" class="col-sm-3 control-label">Email address*</label>
+						<div class="col-sm-6">
+							<input type="email" id="host-email" class="form-control" placeholder="Email" required>
+						</div>
+					</div>
 					<div class="form-group">
 						<label for="game-type" class="col-sm-3 control-label">Type of game*</label>
 						<div class="col-sm-3">
 							<select id="game-type" class="form-control" placeholder="Please select" required>
-								<option selected disabled hidden>Please select</option> 
+								<option selected disabled hidden>Select game type</option> 
 								<option value="BG">Board game</option>
 								<option value="CG">Card game</option>
 								<option value="SP">Sport</option>
@@ -62,27 +72,26 @@
 						</div>
 					</div>
 					<div class="form-group">
+						<label for="date" class="col-sm-3 control-label">Date and time of your game*</label>
+						<div class="col-sm-3">
+							<input type="date" id="date" class="form-control" required>
+						</div>
+						<div class="col-sm-3">
+							<input type="time" id="time" class="form-control" required>
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="post-title" class="col-sm-3 control-label">Give your post a title*</label>
 						<div class="col-sm-6">
-							<input type="text" id="post-title" class="form-control" placeholder="Title" required>
+							<input type="text" id="post-title" class="form-control" placeholder="Title" required aria-describedby="title-help">
+							<span id="title-help" class="help-block"><small>Make it short and snappy - something like 'No Limit Texas Holdem - 4 players needed'</small></span>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="game-description" class="col-sm-3 control-label">Describe your game*</label>
 						<div class="col-sm-6">
-							<textarea id="game-description" class="form-control" rows="5" placeholder="Description" required></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="date" class="col-sm-3 control-label">Date of your game*</label>
-						<div class="col-sm-6">
-							<input type="date" id="date" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="time" class="col-sm-3 control-label">Time of your game*</label>
-						<div class="col-sm-6">
-							<input type="time" id="time" class="form-control" required>
+							<textarea id="game-description" class="form-control" rows="5" placeholder="Description of your game" required aria-describedby="description-help"></textarea>
+							<span id="description-help" class="help-block"><small>Try and give as much information about the game as you can without giving out specific personal details.  If someone expresses an interest in joining your game, you can email each other privately to give the specific address and any other contact details you're comfortable sharing.</small></span>
 						</div>
 					</div>
 					<div class="form-group">
@@ -95,7 +104,7 @@
 			
 <!-- Footer -->
 
-			<footer class="footer container navbar-bottom">
+			<footer class="footer navbar-bottom">
 				<div>
 					<p class="text-muted">&copy;
 						<script language="JavaScript" type="text/javascript">
@@ -113,5 +122,6 @@
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

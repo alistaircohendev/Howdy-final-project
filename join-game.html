@@ -16,7 +16,7 @@
 
 			<header> 
 				<nav class="navbar navbar-inverse">
-				  <div class="container-fluid">
+				  <div>
 				    <!-- Brand and toggle get grouped for better mobile display -->
 				    <div class="navbar-header">
 				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -25,17 +25,15 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-				      <a class="navbar-brand" href="#">Howdy</a>
+				      <a class="navbar-brand" href="#"><strong>HOWDY</strong></a>
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="find-game.html">Find Game<span class="sr-only">(current)</span></a></li>
-				        <li><a href="host-game.html">Host Game</a></li>
-				        <li><a href="#">My Games</a></li>
-				        <li><a href="#">Settings</a></li>
-				        <li><a href="#">Feedback</a></li>
+				        <li class="active"><a href="join-game.html">Join Game<span class="sr-only">(current)</span></a></li>
+				        <li><a href="create-game.html">Create Game</a></li>
+				        <li><a href="feedback.html">Feedback</a></li>
 				      </ul>
 				    </div> <!-- /.navbar-collapse -->
 				  </div> <!-- /.container-fluid -->
@@ -45,15 +43,16 @@
 <!-- Main page content -->
 
 			<main> 
-				<h1 class="text-center">Find Games</h1>
-				<div class="row container-fluid pull-right">
-					<a class="btn btn-default" href="#" role="button">Sort</a>
-					<a class="btn btn-default" href="#" role="button">Filter</a>
+				<h1 class="text-center">Join Game</h1>
+				<p class="text-center">Find games happening near you using the listings below.  You can also sort and filter to find what you're looking for using the controls on the right. Happy gaming!</p>
+				<div class="btn-group pull-right">
+					<a class="btn btn-primary" href="#" role="button">Sort</a>
+					<a class="btn btn-primary" href="#" role="button">Filter</a>
 				</div>
 				<table class="table table-hover table-resposive text-center">
 				  <thead>
 				    <tr>
-				      <th class="text-center">Photo</th>
+				      <th class="text-center">Name of Host</th>
 				      <th class="text-center">Title</th>
 				      <th class="text-center">Game Type</th>
 				      <th class="text-center">Date/Time</th>
@@ -62,60 +61,45 @@
 				  </thead>
 				  <tbody>
 				    <tr>
-						<td><img src="images/host1.png" class="img-fluid center-block" alt="Responsive image"></td>
+						<td>Ali</td>
 						<td>Settlers of Catan</td>
-						<td>
-				    		Board Game<br>
-				    		<img src="images/board-game.png" class="img-fluid center-block" alt="Responsive image">
-				    	</td>
+						<td>Board Game</td>
 						<td>10/05/16 22:00</td>
 						<td>0.1 miles</td>
 				    </tr>
 				    <tr>
-				      	<td><img src="images/host2.png" class="img-fluid center-block" alt="Responsive image"></td>
+				      	<td>Jeff</td>
 				      	<td>NL Texas Holdem Poker - 5 players needed</td>
-				      	<td>
-				      		Card Game<br>
-				      		<img src="images/card-game.png" class="img-fluid center-block" alt="Responsive image">
-				      	</td>
+				      	<td>Card Game</td>
 				    	<td>10/05/16 22:00</td>
 				      	<td>0.2 miles</td>
 				    </tr>
 				    <tr>
-				    	<td><img src="images/host3.png" class="img-fluid center-block" alt="Responsive image"></td>
+				    	<td>Steve</td>
 				    	<td>5-a-side football game - looking for an extra player</td>
-				    	<td>
-				      		Sport<br>
-				      		<img src="images/sport.png" class="img-fluid center-block" alt="Responsive image">
-				      	</td>
+				    	<td>Sport</td>
 				    	<td>10/05/16 22:00</td>
 				    	<td>0.3 miles</td>
 				    </tr>
 				    <tr>
-				    	<td><img src="images/host4.png" class="img-fluid center-block" alt="Responsive image"></td>
+				    	<td>Hermione</td>
 				    	<td>Chess opponent in W9</td>
-				    	<td>
-				    		Board Game<br>
-				    		<img src="images/board-game.png" class="img-fluid center-block" alt="Responsive image">
-				    	</td>
+				    	<td>Board Game</td>
 				    	<td>10/05/16 22:00</td>
 				    	<td>1 mile</td>
 				    </tr>
 				    <tr>
-				      	<td><img src="images/host5.png" class="img-fluid center-block" alt="Responsive image"></td>
+				      	<td>Cruella</td>
 				      	<td>Bridge Tournament - 10 players, prizes available</td>
-				      	<td>
-				      		Card Game<br>
-				      		<img src="images/card-game.png" class="img-fluid center-block" alt="Responsive image">
-				      	</td>
+				      	<td>Card Game</td>
 				      	<td>10/05/16 22:00</td>
 				      	<td>2 miles</td>
 				    </tr>
 				  </tbody>
 				</table>
 
-				<nav class="container">
-				  <ul class="pagination pull-right">
+				<nav>
+				  <ul class="pagination pagination-sm pull-right">
 				    <li>
 				      <a href="#" aria-label="Previous">
 				        <span aria-hidden="true">&laquo;</span>
@@ -137,7 +121,7 @@
 
 <!-- Footer -->
 			
-			<footer class="footer container navbar-bottom">
+			<footer class="footer navbar-bottom">
 				<div>
 					<p class="text-muted">&copy;
 						<script language="JavaScript" type="text/javascript">
@@ -155,5 +139,6 @@
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -1,1 +1,4 @@
-console.log('it works');
+$(document).ready(function(){
+	console.log('all is well');
+  
+});
