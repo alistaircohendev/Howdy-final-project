@@ -25,7 +25,7 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-				      <a class="navbar-brand" href="index.html"><strong>HOWDY</strong></a>
+				      <a class="navbar-brand" href="index.html"><strong>HOWDY<span class="sr-only">(current)</span></strong></a>
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,7 +33,7 @@
 				      <ul class="nav navbar-nav">
 				        <li><a href="join-game.html">Join Game</a></li>
 				        <li><a href="create-game.html">Create Game</a></li>
-				        <li class="active"><a href="feedback.html">Feedback<span class="sr-only">(current)</span></a></li>
+				        <li><a href="feedback.html">Feedback</a></li>
 				      </ul>
 				    </div> <!-- /.navbar-collapse -->
 				  </div> <!-- /.container-fluid -->
@@ -44,34 +44,25 @@
 
 			<main class="container"> 
 				<div>
-					<h1 class="text-center">Feedback</h1>
-					<p class="text-center">We love hearing your feedback, so please leave any comments below, either what you love about Howdy or how it could be better.</p>
+					<h1 class="text-center">Welcome to Howdy</h1>
+					<p class="text-center">This is Howdy, a place for players to find games, and games to find spare players.</p>
+					<p class="text-center">The hope is that the more people playing games with each other (be they sports, card games or board games), the happier, healthier, and more sociable people become.  Happier people = a happier world.</p>
 				</div>
-				<form class="form-horizontal" action="register.php" method="post">
-					<div class="form-group">
-						<label for="feedback-name" class="col-sm-3 control-label">Your name*</label>
-						<div class="col-sm-6">
-							<input type="text" id="feedback-name" class="form-control" placeholder="Name" required>
-						</div>
+				<div class="text-center">
+					<h2>Get started!</h2>
+					<p>Choose one of the options below to get started.</p>
+				</div>
+				<p class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<a class="btn btn-primary btn-lg btn-block" href="join-game.html" role="button">Join an existing game</a>
 					</div>
-					<div class="form-group">
-						<label for="feedback-email" class="col-sm-3 control-label">Email address*</label>
-						<div class="col-sm-6">
-							<input type="email" id="feedback-email" class="form-control" placeholder="Email" required>
-						</div>
+				</p>
+				<p class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<a class="btn btn-default btn-lg btn-block" href="create-game.html" role="button">Or, create your own game</a>
 					</div>
-					<div class="form-group">
-						<label for="feedback-comment" class="col-sm-3 control-label">Your feedback*</label>
-						<div class="col-sm-6">
-							<textarea id="game-description" class="form-control" rows="5" placeholder="Tell us your thoughts" required></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-2 col-sm-offset-7">	
-							<input type="submit" value="Send feedback" class="form-control btn btn-primary">
-						</div>
-					</div>
-				</form>
+				</p>
+				
 			</main> <!-- Main site content -->
 			
 <!-- Footer -->

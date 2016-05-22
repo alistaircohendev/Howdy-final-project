@@ -9,12 +9,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
 	
-	<body class="container">
+	<body>
 		<div> <!-- Site Container -->
 
 <!-- Header and nav -->
 
-			<header> 
+			<header class="container"> 
 				<nav class="navbar navbar-inverse">
 				  <div>
 				    <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,7 +25,7 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				      </button>
-				      <a class="navbar-brand" href="#"><strong>HOWDY</strong></a>
+				      <a class="navbar-brand" href="index.html"><strong>HOWDY</strong></a>
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,58 +42,75 @@
 
 <!-- Main page content -->
 
-			<main> 
+			<main class="container"> 
 				<h1 class="text-center">Join Game</h1>
 				<p class="text-center">Find games happening near you using the listings below.  You can also sort and filter to find what you're looking for using the controls on the right. Happy gaming!</p>
-				<div class="btn-group pull-right">
-					<a class="btn btn-primary" href="#" role="button">Sort</a>
-					<a class="btn btn-primary" href="#" role="button">Filter</a>
+				<div class="pull-right">
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Filter by   <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Board Game</a></li>
+					    <li><a href="#">Card Game</a></li>
+					    <li><a href="#">Sport</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">Remove filter</a></li>
+					  </ul>
+					</div>
 				</div>
 				<table class="table table-hover table-resposive text-center">
 				  <thead>
 				    <tr>
-				      <th class="text-center">Name of Host</th>
-				      <th class="text-center">Title</th>
-				      <th class="text-center">Game Type</th>
-				      <th class="text-center">Date/Time</th>
-				      <th class="text-center">Distance</th>
+				    	<th class="text-center">Game Type</th>
+						<th class="text-center">Title</th>
+				     	<th class="text-center">Name of Host</th>
+				   		<th class="text-center">Date/Time</th>
+				     	<th class="text-center">Distance</th>
 				    </tr>
 				  </thead>
 				  <tbody>
-				    <tr>
-						<td>Ali</td>
-						<td>Settlers of Catan</td>
+				    <tr data-game-type="board" data-game-id="1">
 						<td>Board Game</td>
-						<td>10/05/16 22:00</td>
+						<td>Settlers of Catan in N4</td>
+						<td>Ali</td>
+						<td><div>10/06/16</div><div>22:00</div></td>
 						<td>0.1 miles</td>
 				    </tr>
-				    <tr>
-				      	<td>Jeff</td>
-				      	<td>NL Texas Holdem Poker - 5 players needed</td>
+				    <tr data-game-type="card" data-game-id="2">
 				      	<td>Card Game</td>
-				    	<td>10/05/16 22:00</td>
+				      	<td>NL Texas Holdem Poker - 5 players needed</td>
+				      	<td>Jeff</td>
+				    	<td><div>09/11/16</div><div>10:00</div></td>
 				      	<td>0.2 miles</td>
 				    </tr>
-				    <tr>
-				    	<td>Steve</td>
-				    	<td>5-a-side football game - looking for an extra player</td>
+				    <tr data-game-type="sport" data-game-id="3">
 				    	<td>Sport</td>
-				    	<td>10/05/16 22:00</td>
-				    	<td>0.3 miles</td>
+				    	<td>5-a-side football game - looking for an extra player</td>
+				    	<td>Steve</td>
+				    	<td><div>12/06/16</div><div>19:00</div></td>
+				    	<td>0.5 miles</td>
 				    </tr>
-				    <tr>
-				    	<td>Hermione</td>
-				    	<td>Chess opponent in W9</td>
+				    <tr data-game-type="board" data-game-id="4">
 				    	<td>Board Game</td>
-				    	<td>10/05/16 22:00</td>
-				    	<td>1 mile</td>
+				    	<td>Chess opponent in W9</td>
+				    	<td>Hermione</td>
+				    	<td><div>04/06/16</div><div>22:00</div></td>
+				    	<td>0.8 miles</td>
 				    </tr>
-				    <tr>
-				      	<td>Cruella</td>
-				      	<td>Bridge Tournament - 10 players, prizes available</td>
+				    <tr data-game-type="card" data-game-id="5">
 				      	<td>Card Game</td>
-				      	<td>10/05/16 22:00</td>
+				      	<td>Bridge Tournament - 10 players, prizes available</td>
+				      	<td>Cruella</td>
+				      	<td><div>10/06/16</div><div>20:00</div></td>
 				      	<td>2 miles</td>
+				    </tr>
+				    <tr data-game-type="sport" data-game-id="6">
+				      	<td>Sport</td>
+				      	<td>Looking for a local tennis partner</td>
+				      	<td>Abi</td>
+				      	<td><div>18/06/16</div><div>14:00</div></td>
+				      	<td>4 miles</td>
 				    </tr>
 				  </tbody>
 				</table>
@@ -121,7 +138,7 @@
 
 <!-- Footer -->
 			
-			<footer class="footer navbar-bottom">
+			<footer class="footer navbar-bottom container">
 				<div>
 					<p class="text-muted">&copy;
 						<script language="JavaScript" type="text/javascript">
