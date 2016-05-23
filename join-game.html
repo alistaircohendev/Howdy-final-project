@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Howdy | Make games happen</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
 	<body>
@@ -43,69 +44,71 @@
 <!-- Main page content -->
 
 			<main class="container"> 
-				<h1 class="text-center">Join Game</h1>
-				<p class="text-center">Find games happening near you using the listings below.  You can also sort and filter to find what you're looking for using the controls on the right. Happy gaming!</p>
+				<div class="col-sm-8 col-sm-offset-2">
+					<h1 class="text-center">Join Game</h1>
+					<p class="text-center">Find games happening near you using the listings below.  You can also sort and filter to find what you're looking for using the controls on the right. Happy gaming!</p>
+				</div>
 				<div class="pull-right">
 					<div class="btn-group">
 					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Filter by   <span class="caret"></span>
+					    Filter by <span class="caret"></span>
 					  </button>
-					  <ul class="dropdown-menu">
-					    <li><a href="#">Board Game</a></li>
-					    <li><a href="#">Card Game</a></li>
-					    <li><a href="#">Sport</a></li>
+					  <ul class="dropdown-menu dropdown-menu-right">
+					    <li><a class="board-game-filter">Board Game</a></li>
+					    <li><a class="card-game-filter">Card Game</a></li>
+					    <li><a class="sport-filter">Sport</a></li>
 					    <li role="separator" class="divider"></li>
-					    <li><a href="#">Remove filter</a></li>
+					    <li><a class="remove-filter">Remove filter</a></li>
 					  </ul>
 					</div>
 				</div>
 				<table class="table table-hover table-resposive text-center">
 				  <thead>
 				    <tr>
-				    	<th class="text-center">Game Type</th>
-						<th class="text-center">Title</th>
-				     	<th class="text-center">Name of Host</th>
-				   		<th class="text-center">Date/Time</th>
-				     	<th class="text-center">Distance</th>
+				    	<th class="text-center col-md-2">Game Type</th>
+						<th class="text-center col-md-4">Title</th>
+				     	<th class="text-center col-md-2">Name of Host</th>
+				   		<th class="text-center col-md-2">Date/Time</th>
+				     	<th class="text-center col-md-2">Distance</th>
 				    </tr>
 				  </thead>
 				  <tbody>
-				    <tr data-game-type="board" data-game-id="1">
+				    <tr class="board-game-row" id="game1">
 						<td>Board Game</td>
 						<td>Settlers of Catan in N4</td>
 						<td>Ali</td>
 						<td><div>10/06/16</div><div>22:00</div></td>
 						<td>0.1 miles</td>
 				    </tr>
-				    <tr data-game-type="card" data-game-id="2">
+				    <tr class="card-game-row">
 				      	<td>Card Game</td>
 				      	<td>NL Texas Holdem Poker - 5 players needed</td>
 				      	<td>Jeff</td>
 				    	<td><div>09/11/16</div><div>10:00</div></td>
 				      	<td>0.2 miles</td>
 				    </tr>
-				    <tr data-game-type="sport" data-game-id="3">
+				    <tr class="sport-row">
 				    	<td>Sport</td>
 				    	<td>5-a-side football game - looking for an extra player</td>
 				    	<td>Steve</td>
 				    	<td><div>12/06/16</div><div>19:00</div></td>
 				    	<td>0.5 miles</td>
 				    </tr>
-				    <tr data-game-type="board" data-game-id="4">
+				    <tr class="board-game-row">
 				    	<td>Board Game</td>
 				    	<td>Chess opponent in W9</td>
 				    	<td>Hermione</td>
 				    	<td><div>04/06/16</div><div>22:00</div></td>
 				    	<td>0.8 miles</td>
 				    </tr>
-				    <tr data-game-type="card" data-game-id="5">
+				    <tr class="card-game-row">
 				      	<td>Card Game</td>
 				      	<td>Bridge Tournament - 10 players, prizes available</td>
 				      	<td>Cruella</td>
 				      	<td><div>10/06/16</div><div>20:00</div></td>
 				      	<td>2 miles</td>
 				    </tr>
-				    <tr data-game-type="sport" data-game-id="6">
+				    <tr class="sport-row">
 				      	<td>Sport</td>
 				      	<td>Looking for a local tennis partner</td>
 				      	<td>Abi</td>
