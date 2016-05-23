@@ -5,3 +5,21 @@ tr {
 .dropdown-menu a {
 	cursor: pointer;
 }
+
+footer {
+	padding: 1em;
+	margin-top: 1.5em;
+}
+
+footer div {
+	padding: 0;
+	margin: 0;
+}
+
+.success {
+	color: green;
+}
+
+hr {
+	width: 100%;
+}

@@ -38,6 +38,8 @@ $(document).ready(function(){
 
 	// Go to the game details page
 	$('#game1').on('click', function(){
-		window.location.href = "game1-details.html";
+		window.location.href = "game-details1.html";
 	});
+
+
 });

@@ -32,9 +32,9 @@
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				        <li><a href="join-game.html">Join Game</a></li>
+				        <li class="active"><a href="join-game.html">Join Game<span class="sr-only">(current)</span></a></li>
 				        <li><a href="create-game.html">Create Game</a></li>
-				        <li class="active"><a href="feedback.html">Feedback<span class="sr-only">(current)</span></a></li>
+				        <li><a href="feedback.html">Feedback</a></li>
 				      </ul>
 				    </div> <!-- /.navbar-collapse -->
 				  </div> <!-- /.container-fluid -->
@@ -44,35 +44,73 @@
 <!-- Main page content -->
 
 			<main class="container"> 
-				<div class="col-sm-8 col-sm-offset-2">
-					<h1 class="text-center">Feedback</h1>
-					<p class="text-center">We love hearing your feedback, so please leave any comments below, either what you love about Howdy or how it could be better.</p>
-				</div>
-				<form class="form-horizontal" action="feedback-success.html" method="post">
+				<a href="join-game.html" class="btn btn-default"><< Back to listings</a>
+				<section class="row">
+					<div class="col-sm-12">
+						<h2>Settlers of Catan in N4</h2>
+					</div>
+					<div class="col-sm-2">
+						<p><strong>Game type:</strong></p>
+					</div>
+					<div class="col-sm-4">
+						<p>Board game</p>
+					</div>
+					<div class="col-sm-2">
+						<p><strong>Date and Time</strong></p>
+					</div>
+					<div class="col-sm-4">
+						<p>10/10/16 22:00</p>
+					</div>
+					<div class="col-sm-2">
+						<p><strong>Host's name:</strong></p>
+					</div>
+					<div class="col-sm-4">
+						<p>Ali</p>
+					</div>
+					<div class="col-sm-2">
+						<p><strong>Location:</strong></p>
+					</div>
+					<div class="col-sm-4">
+						<p>London, W9</p>
+					</div>
+					<div class="col-sm-12">
+						<p><strong>Description:</strong></p>
+					</div>
+					<div class="col-sm-10">
+						<p>I'm looking for 3 or 4 players in the Maida Vale, W9 area to play Settlers of Catan.  I was bought the game as a present last year by my girlfriend, and love it but don't know too many people nearby who play.  I thought it could also be a chance to get some of my local neighbours.  If you're interested in playing, drop me a message.  Ali</p>
+					</div>
+				</section>
+				<hr>
+				<section>
+					<h4> Want to join this game? Get in touch with the host...</h4>
+					<form class="form-horizontal" action="contact-host-success.html" method="post">
 					<div class="form-group">
-						<label for="feedback-name" class="col-sm-3 control-label">Your name*</label>
+						<label for="contact-host-name" class="col-sm-3 control-label">Your name*</label>
 						<div class="col-sm-6">
-							<input type="text" id="feedback-name" class="form-control" placeholder="Name" required>
+							<input type="text" id="contact-host-name" class="form-control" placeholder="Name" required>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="feedback-email" class="col-sm-3 control-label">Email address*</label>
+						<label for="contact-host-email" class="col-sm-3 control-label">Your email address*</label>
 						<div class="col-sm-6">
-							<input type="email" id="feedback-email" class="form-control" placeholder="Email" required>
+							<input type="email" id="contact-host-email" class="form-control" placeholder="Email" required>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="feedback-comment" class="col-sm-3 control-label">Your feedback*</label>
+						<label for="contact-host-message" class="col-sm-3 control-label">Message to the host*</label>
 						<div class="col-sm-6">
-							<textarea id="feedback-comment" class="form-control" rows="5" placeholder="Tell us your thoughts" required></textarea>
+							<textarea id="contact-host-message" class="form-control" rows="5" placeholder="Message" required></textarea>
+							<span id="title-help" class="help-block"><small>Completing the form will send your contact details and a messsage to the host. They can then get in touch with you directly to give specific details about the game and arrange to meet up.</small></span>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-2 col-sm-offset-7">	
-							<input type="submit" value="Send feedback" class="form-control btn btn-primary">
+							<input type="submit" value="Send" class="form-control btn btn-primary">
 						</div>
 					</div>
 				</form>
+				</section>
+				
 			</main> <!-- Main site content -->
 			
 <!-- Footer -->
