@@ -37,3 +37,39 @@ hr {
 .top-space {
 	margin-top: 1em;
 }
+
+
+@media only screen and (max-width: 410px) {
+	.table td {
+		font-size: 0.8em;
+	}
+}
+
+
+@media only screen and (max-width: 410px) {
+	.table th {
+		font-size: 0.8em;
+	}
+}
+
+
+
+@media only screen and (max-width: 350px) {
+	.table td {
+		font-size: 0.7em;
+	}
+}
+
+
+@media only screen and (max-width: 350px) {
+	.table th {
+		font-size: 0.7em;
+	}
+}
+
+
+@media only screen and (max-width: 350px) {
+	.col-sm-12 h2 {
+		font-size: 1.9em;
+	}
+}
