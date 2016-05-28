@@ -1,3 +1,13 @@
+.navbar-inverse .navbar-brand {
+	font-family: 'Courgette', cursive;
+	color: white;
+}
+
+.brand-font {
+	font-family: 'Courgette', cursive;
+}
+
+
 tr {
 	cursor: pointer;
 }
@@ -24,10 +34,6 @@ hr {
 	width: 100%;
 }
 
-.navbar-brand {
-	font-family: 'Courgette', cursive;
-}
-
-.brand-font {
-	font-family: 'Courgette', cursive;
+.top-space {
+	margin-top: 1em;
 }
